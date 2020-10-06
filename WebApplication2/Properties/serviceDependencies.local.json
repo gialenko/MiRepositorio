@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/serverdb2020/databases/DB_ANIMANIA",
+      "type": "mssql.azure",
+      "connectionId": "Conexion",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}

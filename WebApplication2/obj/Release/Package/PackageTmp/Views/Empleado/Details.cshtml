@@ -1,0 +1,184 @@
+﻿@model WebApplication2.Models.Empleado
+
+
+
+
+
+<br />
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home" style="color:black">Inicio</a></li>
+    <li><a data-toggle="tab" href="#menu1">Datos Personales</a></li>
+    <li><a data-toggle="tab" href="#menu2">Asignaciones</a></li>
+</ul>
+
+<div class="tab-content">
+
+    <div id="home" class="tab-pane fade in active">
+        <h3>Bienvenidos a Animania</h3>
+        <p>Somos un grupo de amantes de los animes que deseamos que cada venta sea toda una aventura</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="~/images/img1.jpg" alt="Lights" style="width:100%;height:200px">
+                    <div class="caption">
+                        <p class="text-center">ONE PUNCH MAN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="~/images/img2.jpg" alt="Lights" style="width:100%;height:200px">
+                    <div class="caption">
+                        <p class="text-center">NARUTO SHIPPUDEN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="~/images/img3.jpg" alt="Lights" style="width:100%;height:100%">
+                    <div class="caption">
+                        <p class="text-center">DRAGON BALL Z</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+
+        <div>
+            <h4>Datos: Empleado</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.IdEmpleado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.IdEmpleado)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DocIdentidad)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DocIdentidad)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.NomEmpleado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NomEmpleado)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.CorEmpleado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CorEmpleado)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.TipoDoc)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.TipoDoc)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.DirEmpleado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.DirEmpleado)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaNacimiento)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaNacimiento)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EstEmpleado)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EstEmpleado)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaIniContrato)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaIniContrato)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FechaFinContrato)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FechaFinContrato)
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+    <div id="menu2" class="tab-pane fade">
+        <div>
+            <h4>Datos: Asignación</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Asignaciones[0].CodAsginacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Asignaciones[0].CodAsginacion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Asignaciones[0].NomAsignacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Asignaciones[0].NomAsignacion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Asignaciones[0].IniAsignacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Asignaciones[0].IniAsignacion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Asignaciones[0].FinAsignacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Asignaciones[0].FinAsignacion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Asignaciones[0].EstAsignacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Asignaciones[0].EstAsignacion)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+</div>

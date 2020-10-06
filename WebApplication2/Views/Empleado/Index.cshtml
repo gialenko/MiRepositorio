@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplication2.Models.Empleado>
+
+
+<br />
+
+<h1 class="text-left ">Lista de Empleados</h1>
+
+<br />
+<table class="table table-bordered table-striped">
+    <tr>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.IdEmpleado)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.DocIdentidad)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.NomEmpleado)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.EstEmpleado)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="text-center">
+                @Html.ActionLink(@Html.DisplayFor(modelItem => item.IdEmpleado).ToString(), "Details", new {/* id = item.IdEmpleado*/ })
+
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.DocIdentidad)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.NomEmpleado)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.EstEmpleado)
+            </td>
+        </tr>
+    }
+
+</table>

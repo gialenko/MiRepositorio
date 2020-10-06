@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Conexion-Web.config Connection String" description="Conexion Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=serverdb2020.database.windows.net;Initial Catalog=DB_ANIMANIA;User ID=administrador;Password=C1b3r2020" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\gninodeguzman\\source\\repos\\WebApplication2\\WebApplication2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Conexion']/@connectionString" />
+  </parameter>
+</parameters>
